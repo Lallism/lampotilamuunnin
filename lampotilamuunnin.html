@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+    <main>
+        <h1>Lämpötilamuunnin</h1>
+        <form id="form" name="form">
+            <select id="type" name="type">
+                <option value="celsius-to-fahrenheit">Celsius -> Fahrenheit</option>
+                <option value="fahrenheit-to-celsius">Fahrenheit -> Celsius</option>
+            </select><br>
+            <label for="value">Kirjoita luku:</label><br>
+            <input class="textbar" type="text" id="value" name="value">
+            <input class="btn" type="submit" value="Muunna"><br>
+            <input type="radio" id="decimal1" name="decimals" value="decimal1" checked="checked">
+            <label for="decimal1">1 desimaali</label><br>
+            <input type="radio" id="decimal2" name="decimals" value="decimal2">
+            <label for="decimal2">2 desimaalia</label><br>
+            <input type="radio" id="decimal3" name="decimals" value="decimal3">
+            <label for="decimal3">3 desimaalia</label><br>
+        </form><br>
+        <p class="result" id="result"></p>
+        <p class="result" id="absolute-zero"></p>
+    </main>
+    <script src="lampotilamuunnin.js"></script>
+</body>
+</html>
